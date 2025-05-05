@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    .division {
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+        background-image: linear-gradient(to right, #ffedb3, transparent);
+
+        margin-left: calc(50% - 50vw);
+        padding-left: calc(50vw - 50%);
+        box-sizing: border-box;
+        width: 100vw;
+
+        > span {
+            color: #ff7100;
+            font-size: 16pt;
+            font-weight: 500;
+            user-select: none;
+        }
+    }
+}

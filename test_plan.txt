@@ -1,0 +1,88 @@
+A. Unauthenticated User
+
+1. Flight Search by Date & Cities
+   - Search using departure date + source city + destination city.
+2. Flight Search by Date & Airport Codes
+   - Search using departure date + departure airport code + arrival airport code.
+3. Round‑Trip Search
+   - Search with departure date, return date, departure airport code, and destination city.
+   - Edge cases:
+     - Non‑existent airport code
+     - Non‑existent city
+     - Valid inputs but zero matching flights
+4. Check Flight Status
+   - Query status with invalid:
+     - Airline name
+     - Flight number
+     - Departure date
+
+B. Registration Flows
+
+5. Customer Sign‑Up
+   - Attempt to register with an email that’s already in use.
+6. Staff Sign‑Up
+   - Use a username that already exists.
+   - Specify an airline that doesn’t exist.
+
+C. Login Flows
+
+7. Customer Login
+   - Try logging in with a non‑existent email.
+   - Try logging in with a valid email but wrong password.
+8. Staff Login
+   - Try logging in with a non‑existent username.
+   - Try logging in with the wrong password.
+
+D. Logged‑In Customer
+
+Main Page
+9. Purchase Ticket
+10. View All Tickets
+11. Filter Tickets by Date Range
+12. Filter Tickets by Destination City
+13. Filter Tickets by Departure Airport
+14. Complex Ticket Filters (date range + source city + destination airport)
+    - Edge cases:
+      - Invalid city name
+      - Invalid airport code
+      - Valid filters but no results
+15. Cancel a Booking
+16. Leave a Flight Review
+    - Edge: empty comments
+    - Edge: missing rating (should be rejected)
+
+Account Page
+17. Add Phone Number
+18. View Total Spend
+19. Logout
+
+E. Logged‑In Staff
+
+Main Page
+20. Default View: Flights within the next 30 days should display automatically.
+21. Filter by Date Range
+22. Filter by Origin City + Destination Airport
+23. Combined Filters: date range + departure airport + arrival city
+    - Edge: invalid airport
+    - Edge: invalid city
+    - Edge: valid filters but zero flights
+24. Update Flight Status
+25. View Flight Ratings
+    - Verify average rating calculation
+26. List Passengers on a Flight
+    - Edge: non‑existent flight
+27. List Flights Taken by a Customer
+    - Edge: non‑existent customer
+28. Create New Flight
+    - Edge: invalid airport code
+    - Edge: invalid airplane ID
+29. Add a New Airplane
+    - Edge: negative seat count (should error)
+30. Add a New Airport
+
+Account Page
+31. Add Phone Number
+32. Add Email Address
+33. View Reports
+    - Try at least three different date ranges
+34. Logout

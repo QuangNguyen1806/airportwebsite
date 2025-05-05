@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    top: -50px;
+    width: 1000px;
+    height: max-content;
+    margin: 0 auto;
+
+    background-color: white;
+
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

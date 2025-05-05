@@ -1,0 +1,13 @@
+.container {
+    width: 90%;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    > main {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}

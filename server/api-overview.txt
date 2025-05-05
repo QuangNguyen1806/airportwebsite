@@ -1,0 +1,29 @@
+API Overview:
+3. POST api/register
+4. POST api/login
+12. POST api/logout
+25. POST api/user/phone_number
+26. POST api/user/email
+
+13. GET api/flights
+15. PUT api/flights
+2. GET api/flights/status
+16. POST api/flights/status
+1. GET api/flights/future
+5. GET api/flights/schedule
+
+21. GET api/tickets
+6. GET api/tickets/price
+7. PUT api/tickets/register
+8. POST api/tickets/unregister
+
+10. GET api/comment
+9. PUT api/comment
+
+17. PUT api/airplane
+
+14. GET api/customer/all
+22. GET api/customer
+
+11. GET api/spending
+19. PUT api/airport

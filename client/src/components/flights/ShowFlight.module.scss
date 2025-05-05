@@ -1,0 +1,15 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.error {
+    position: relative;
+    top: -25px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 600;
+    color: red;
+}

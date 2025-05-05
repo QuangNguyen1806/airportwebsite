@@ -1,0 +1,34 @@
+Client Folder:
+/build: built frontend code using react build command
+/public: some images used in the project
+
+/src: source code of the frontend
+  /src/utility.js: some utility functions used for frontend
+  /src/index.js: root component
+  /src/App.js: handles frontend routing
+  /src/pages: code of root component for each route
+  /src/hooks: custom React hooks for global user identity
+  /src/context: React global context for user identity management
+  /src/components: code for actual frontend logic
+
+package.json: packages used for developing the frontend
+
+Server Folder:
+utility.py: utility functions used for backend
+server.py: main/starting script for backend
+requirements.txt: Python dependencies for backend
+database.py: database setup functions
+database_reset.py: Python script to reset database data
+constant.py: constants used for backend
+api-overview: detailed API reference for the project
+/database_init: SQL files used for initializing the database (mostly from part 2)
+
+/apis: folder containing all API implementations
+  /apis/airplane.py: implementations related to airplane
+  /apis/airport.py: implementations related to airport
+  /apis/comments.py: implementations related to comments
+  /apis/customers.py: implementations related to customers
+  /apis/flights.py: implementations related to flights
+  /apis/spending.py: implementations related to spending
+  /apis/tickets.py: implementations related to tickets
+  /apis/user.py: implementations related to user

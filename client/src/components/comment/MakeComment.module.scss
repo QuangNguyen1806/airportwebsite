@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    border: 1px solid lightgrey;
+
+    padding: 10px;
+
+    background-color: rgb(255, 248, 225);
+
+    box-sizing: border-box;
+
+    .comment {
+        width: 100%;
+        font-size: 14pt;
+
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+
+        .textarea {
+            width: calc(100% - 15px);
+            background-color: transparent;
+
+            border: none;
+            resize: none;
+
+            line-height: 1.5;
+            font-size: 14pt;
+
+            padding: 5px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .error {
+        margin: 0 auto;
+        color: red;
+    }
+}

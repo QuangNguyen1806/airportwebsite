@@ -1,0 +1,117 @@
+.container {
+    width: 100%;
+    border: 1px solid lightgrey;
+    background-color: white;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    > header {
+        //background-color: #c2cff0;
+
+        border-bottom: 1px solid lightgrey;
+
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+        height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 30px;
+
+        color: rgb(255, 113, 0);
+        font-size: 16pt;
+        font-weight: 600;
+
+        user-select: none;
+    }
+
+    > main {
+        //background-color: rgba(209, 209, 209, 0.5);
+
+        padding: 30px;
+
+        > div {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+
+            font-size: 14pt;
+            font-weight: 400;
+
+            > section {
+                display: flex;
+                align-items: flex-start;
+
+                > div:first-child {
+                    width: 200px;
+                    font-weight: 600;
+                    height: 1em;
+                    padding: 10px;
+                }
+
+                > div:last-child {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+
+                    border: 1px solid lightgrey;
+                    width: 300px;
+
+                    padding: 10px;
+                }
+
+                .list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    > div {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 10px;
+
+                        border: 1px solid lightgrey;
+                        width: 300px;
+
+                        //background-color: white;
+
+                        padding: 10px;
+
+                        > input {
+                            border: none;
+                            font-size: inherit;
+                            width: 100%;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .button {
+                            position: absolute;
+                            right: -110px;
+                            width: 100px;
+                        }
+                    }
+                }
+
+                .empty {
+                    user-select: none;
+                    background-color: rgba(211, 211, 211, 0.5);
+                    height: 1em;
+                }
+            }
+        }
+    }
+}
