@@ -30,8 +30,8 @@ CREATE TABLE airline_staff_phone_number (
 
 CREATE TABLE airline_staff_email_address (
     username VARCHAR(100),
-    email_address VARCHAR(30),
-    PRIMARY KEY (username, email_address),
+    email VARCHAR(30),
+    PRIMARY KEY (username, email),
     CONSTRAINT fk_staff_email
       FOREIGN KEY (username)
       REFERENCES airline_staff(username)
